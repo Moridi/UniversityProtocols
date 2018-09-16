@@ -1,0 +1,19 @@
+RectangleTest DEFINITIONS ::= BEGIN
+
+-- ACM PROTOCOL
+
+Acmp ::= SEQUENCE 
+{
+	height INTEGER, -- Height of the rectangle
+	width INTEGER -- Width of the rectangle
+}
+
+-- IEEE PROTOCOL
+
+Ieeep ::= SEQUENCE 
+{
+	height INTEGER, -- Height of the rectangle
+	width INTEGER -- Width of the rectangle
+}
+
+END
