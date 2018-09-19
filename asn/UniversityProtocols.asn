@@ -1,19 +1,19 @@
-RectangleTest DEFINITIONS ::= BEGIN
+UniversityProtocols DEFINITIONS ::= BEGIN
 
 -- ACM PROTOCOL
 
 Acmp ::= SEQUENCE 
 {
-	height INTEGER, -- Height of the rectangle
-	width INTEGER -- Width of the rectangle
+	budget INTEGER(0..65535),
+	consumed INTEGER(0..65535)
 }
 
 -- IEEE PROTOCOL
 
 Ieeep ::= SEQUENCE 
 {
-	height INTEGER, -- Height of the rectangle
-	width INTEGER -- Width of the rectangle
+	budget INTEGER(0..255),
+	consumed INTEGER(0..255)
 }
 
 END
